@@ -1,0 +1,325 @@
+
+body{
+    margin: 20px 20px;
+    background-color: rgb(17, 17, 17);
+}
+header{
+    font-family: 'Chelsea Market', cursive;
+    margin-top: -48px;
+    text-align: center;
+    background-color: rgba(145,13,13,.8);
+    background-image: url('https://images.unsplash.com/photo-1515163988842-60ece4c9a5bb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80');
+    background-blend-mode: color-burn;
+    color: white;
+    transform: skewY(-2deg);
+    border-bottom-right-radius: 40px;
+    position: relative;
+    z-index: 1;
+    text-shadow: 2px 2px black;
+    box-shadow: 3px 3px 3px 0px rgb(107, 25, 39);
+}
+
+h1{
+    font-size: 1.5em;
+    transform: skewY(2deg);
+}
+h2{
+    font-size: 0.8em;
+    color: rgb(240, 231, 231);
+    transform: skewY(2deg);
+}
+ul {
+    padding: 0px 0px 20px 0px;
+    transform: skewY(2deg);
+}
+ul > li {
+    list-style-type: none;
+    display: inline;
+    margin: 10px;
+   }
+
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    color: rgb(223, 203, 203);
+}
+ul li a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+hr{
+    transform: skewY(2deg);
+    opacity: 0.3;
+    margin: 0px 20px;
+}
+img{
+    margin: 50px 0px 0px 0px;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    border: 3px solid rgba(29, 12, 12, 0.8);
+    transform: skewY(2deg);
+}
+
+article {
+    text-align: center;
+    margin-top: 37px;
+    position: relative;
+    z-index: 1;
+    border: 2px solid rgba(145,13,13,.8);
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    transform: skewY(-2deg);
+    box-shadow: 3px 3px 0 0 rgba(145,13,13,.8);
+    font-family: 'Handlee', cursive;
+    background-color: white;
+}
+article:hover{
+    bottom: 2px;
+}
+
+#skills li{
+    display: block;
+    margin: 25px;
+}
+
+#skills{
+    border: 1px solid rgb(230, 226, 226);
+    border-radius: 10%;
+    background-color: #fffff2;
+    margin: 0px 5px;
+    transform: skewY(2deg);
+}
+#logo{
+    margin: 10px auto;
+    width: 7rem;
+    height: 7rem;
+    display: block;
+}
+.fa-grin-beam{
+    color: 	rgba(231, 150, 28, 0.822);
+}
+
+.span{
+    color: #b44827;
+    border: 2px dashed #b44827;
+    padding: 5px;
+    margin: 10px 6em;
+}
+h3{
+    transform: skewY(2deg);
+}
+
+.span:hover{
+    background-color: rgba(92, 13, 13, 0.8);
+    color: white;
+}
+p{
+    border: 1px solid rgb(230, 226, 226);
+    margin: 0px 5px;
+    border-radius: 10%;
+    overflow-wrap: break-word;
+    padding: 10px;
+    background-color: #fffff2;
+    transform: skewY(2deg);
+}
+.hobbies{
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 37px;
+    background-color: rgb(31, 28, 28);
+    position: relative;
+    border-right: 2px solid rgba(145,13,13,.8);
+    border-top-left-radius: 40px;
+    transform: skewY(-2deg);
+    height: 150px;
+    box-shadow: 3px 3px 0 0 rgba(145,13,13,.8);
+    font-family: 'Handlee', cursive;
+}
+footer:before{
+    content: "";
+    width: 100%;
+    height: 60px;
+    background-color: rgb(31, 28, 28);
+    transform: skewY(2deg);
+    position: absolute;
+    left: 0px;
+    top: 115px;
+    box-shadow: 3px 3px 0 0 rgba(145,13,13,.8);
+    border-right: 2px solid rgba(145,13,13,.8);
+    border-bottom-right-radius: 40px;
+}
+footer:hover{
+    bottom: 2px;
+}
+.socialMediaLinks{
+    transform: skewY(2deg);
+}
+.socialMediaLinks a { 
+    font-size: 20px;
+    margin: 40px 0px;
+    color: #000000;
+    text-decoration: none;
+    width: 50px;
+    text-align: center;
+}
+.socialMediaLinks a.fa-twitter { 
+    color: #00aced;
+}
+.socialMediaLinks a.fa-facebook-f { 
+    color: #3b5998; 
+}
+.socialMediaLinks a.fa-pinterest { 
+    color: #C92228; 
+}
+.socialMediaLinks a.fa-instagram { 
+    color: #8a3ab9; 
+}
+.socialMediaLinks a.fa-github { 
+    color: rgb(173, 129, 173); 
+}
+.socialMediaLinks a:hover { 
+    background-color: #36d6c8; 
+    width: 50px;
+    height: 20px;
+}
+
+.contact{
+    color: rgb(187, 21, 21);
+    font-size: 1.5em;
+    font-weight: bold;
+    transform: skewY(2deg);
+    padding-top: 15px;
+    left: 50px;
+    text-decoration: underline;
+}
+.div{
+    font-family: 'Chelsea Market', cursive;
+    margin-top: -20px;
+    text-align: center;
+    background-color: rgba(145,13,13,.8);
+    font-size: 25px;
+    color: white;
+    border-bottom-right-radius: 40px;
+    z-index: 5;
+    box-shadow: 3px 3px 3px 0px rgb(107, 25, 39);
+    display: none;
+    width: 100%;
+}
+aside{
+    text-align: center;
+    margin-top: 37px;
+    position: relative;
+    z-index: 1;
+    border: 2px solid rgba(145,13,13,.8);
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    box-shadow: 2px 2px 0 0 rgba(145,13,13,.8);
+    font-family: 'Handlee', cursive;
+    display: none;
+    background-color:rgb(233, 199, 205);
+}
+
+aside:hover{
+    bottom: 2px;
+}
+@media screen and (min-width: 680px){
+    #skills li{
+        display: inline;
+        margin: 20px;
+    }
+    #skills{
+        padding-top: 15px;
+    }
+}
+@media screen and (min-width: 1024px){
+    main{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+    }
+    header{
+        margin-left: -30px;
+        width: 17.5rem;
+        transform: none;
+        padding-top: 10px;
+        position: fixed;
+        height: 150%;
+        z-index: 7;
+        border-bottom-right-radius: initial;
+    }
+    img{
+        width: 12rem;
+        height: 12rem;
+    }
+    nav > ul > li{
+        display: block;
+        font-size: 50px;
+        margin: 10px;
+    }
+    article{
+        transform: none;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: initial;
+        border-top-left-radius: initial;
+    }
+  
+    footer::before{
+        display: none;
+    }
+    h1, h2, ul, header img{
+        transform: none;
+    }
+    .div{
+        display: inherit;
+    }
+    .socialMediaLinks, .contact, article > section > p, h3, #skills{
+        transform: none;
+   
+    }
+    footer{
+        transform: none;
+        margin: 10px 0px 0px 16em;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 30px;
+        border-bottom: initial;
+    }
+    .wrapper{
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+    }
+    aside{
+        display: inherit;
+        height: 1350px;
+        overflow: auto;
+    }
+    aside::-webkit-scrollbar{
+        height: 50px;
+    }
+}
+@media screen and (min-width: 1069px){
+    header{
+        width: 18.5rem;
+    }
+}
+@media screen and (min-width: 1115px){
+    header{
+        width: 19rem;
+    }
+}
+@media screen and (min-width: 1280px){
+    header{
+        width: 20rem;
+    }
+}
+
+@media screen and (min-width: 1165px){
+    header{
+        width: 22.5rem;
+    }
+}
+
