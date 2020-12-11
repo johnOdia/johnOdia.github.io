@@ -11,7 +11,6 @@ header{
     background-image: url('https://images.unsplash.com/photo-1515163988842-60ece4c9a5bb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80');
     background-blend-mode: color-burn;
     color: white;
-    transform: skewY(-2deg);
     border-bottom-right-radius: 40px;
     position: relative;
     z-index: 1;
@@ -21,16 +20,16 @@ header{
 
 h1{
     font-size: 1.5em;
-    transform: skewY(2deg);
+    
 }
 h2{
     font-size: 0.8em;
     color: rgb(240, 231, 231);
-    transform: skewY(2deg);
+    
 }
 ul {
     padding: 0px 0px 20px 0px;
-    transform: skewY(2deg);
+    
 }
 ul > li {
     list-style-type: none;
@@ -50,7 +49,7 @@ ul li a:hover{
 }
 
 hr{
-    transform: skewY(2deg);
+    
     opacity: 0.3;
     margin: 0px 20px;
 }
@@ -60,7 +59,7 @@ img{
     height: 10rem;
     border-radius: 50%;
     border: 3px solid rgba(29, 12, 12, 0.8);
-    transform: skewY(2deg);
+    
 }
 
 article {
@@ -71,7 +70,6 @@ article {
     border: 2px solid rgba(145,13,13,.8);
     border-top-left-radius: 40px;
     border-bottom-right-radius: 40px;
-    transform: skewY(-2deg);
     box-shadow: 3px 3px 0 0 rgba(145,13,13,.8);
     font-family: 'Handlee', cursive;
     background-color: white;
@@ -85,12 +83,21 @@ article:hover{
     margin: 25px;
 }
 
-#skills{
-    border: 1px solid rgb(230, 226, 226);
-    border-radius: 10%;
+#skills, .experience{
+    border-radius: 5px;
     background-color: #fffff2;
     margin: 0px 5px;
-    transform: skewY(2deg);
+    
+}
+
+.courses{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0px 5px;
+    border-radius: 5px;
+    overflow-wrap: break-word;
+    padding: 10px;
+    background-color: #fffff2;
 }
 #logo{
     margin: 10px auto;
@@ -102,29 +109,23 @@ article:hover{
     color: 	rgba(231, 150, 28, 0.822);
 }
 
-.span{
-    color: #b44827;
-    border: 2px dashed #b44827;
-    padding: 5px;
-    margin: 10px 6em;
-}
 h3{
-    transform: skewY(2deg);
+    font-size: 1.7em;
+    color: #b44827;
 }
 
-.span:hover{
-    background-color: rgba(92, 13, 13, 0.8);
-    color: white;
-}
 p{
-    border: 1px solid rgb(230, 226, 226);
     margin: 0px 5px;
-    border-radius: 10%;
+    border-radius: 5px;
     overflow-wrap: break-word;
     padding: 10px;
     background-color: #fffff2;
-    transform: skewY(2deg);
 }
+
+.about p, .projects div{
+    font-size: 1.3rem;
+}
+
 .hobbies{
     margin-bottom: 20px;
 }
@@ -136,7 +137,6 @@ footer {
     position: relative;
     border-right: 2px solid rgba(145,13,13,.8);
     border-top-left-radius: 40px;
-    transform: skewY(-2deg);
     height: 150px;
     box-shadow: 3px 3px 0 0 rgba(145,13,13,.8);
     font-family: 'Handlee', cursive;
@@ -146,7 +146,7 @@ footer:before{
     width: 100%;
     height: 60px;
     background-color: rgb(31, 28, 28);
-    transform: skewY(2deg);
+    
     position: absolute;
     left: 0px;
     top: 115px;
@@ -157,9 +157,7 @@ footer:before{
 footer:hover{
     bottom: 2px;
 }
-.socialMediaLinks{
-    transform: skewY(2deg);
-}
+
 .socialMediaLinks a { 
     font-size: 20px;
     margin: 40px 0px;
@@ -174,8 +172,8 @@ footer:hover{
 .socialMediaLinks a.fa-facebook-f { 
     color: #3b5998; 
 }
-.socialMediaLinks a.fa-pinterest { 
-    color: #C92228; 
+.socialMediaLinks a.fa-linkedin-in { 
+    color: #3b5998; 
 }
 .socialMediaLinks a.fa-instagram { 
     color: #8a3ab9; 
@@ -193,7 +191,7 @@ footer:hover{
     color: rgb(187, 21, 21);
     font-size: 1.5em;
     font-weight: bold;
-    transform: skewY(2deg);
+    
     padding-top: 15px;
     left: 50px;
     text-decoration: underline;
@@ -228,6 +226,20 @@ aside{
 aside:hover{
     bottom: 2px;
 }
+
+.projects{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 30px;
+}
+
+@media screen and (min-width: 300px){
+    .experience, .education{
+        transform: none;
+                
+    }
+}
+
 @media screen and (min-width: 680px){
     #skills li{
         display: inline;
@@ -235,6 +247,11 @@ aside:hover{
     }
     #skills{
         padding-top: 15px;
+    }
+
+    .experience, .education{
+        transform: none;
+                
     }
 }
 @media screen and (min-width: 1024px){
@@ -288,10 +305,10 @@ aside:hover{
         border-top-right-radius: 30px;
         border-bottom: initial;
     }
-    .wrapper{
+    /* .wrapper{
         display: grid;
         grid-template-columns: 3fr 1fr;
-    }
+    } */
     aside{
         display: inherit;
         height: 1350px;
